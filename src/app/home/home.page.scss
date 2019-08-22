@@ -1,1 +1,100 @@
+.barraCentral {
+    background-color: #18ACC4;
+    color: white;
+    height: 40px;
+    width: 100%
+}
 
+.div-header {
+    background-color: #FBFBFB;
+    color: #18ACC4;
+}
+
+table {
+    height: auto;
+    width: 100%;
+}
+
+thead {
+    height: 120px;
+    box-sizing: border-box;
+}
+
+a {
+    // width: 100%;
+    background-color: #18ACC4;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    // padding-top: 40px;
+    // height: 100px;
+    // text-align: center;
+    
+}
+
+a:hover {
+    background-color: #007A8D;
+}
+
+ion-card {
+    width: 20%;
+    height: 40%;
+}
+
+.iconCard {
+    font-size: 50px;
+    color: #18ACC4;
+    // padding-left: 50%
+}
+
+.tableMenu {
+    background-color: #18ACC4;
+    height: 100px;
+}
+
+// ion-button {
+//     background-color: #007A8D
+// }
+
+ion-card-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+ion-card-subtitle {
+    text-align: center;
+}
+
+ion-card-header {
+    padding-top: 35%;
+    text-align: center
+}
+
+.negrito{
+    font-weight: bold
+}
+
+ion-content {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer1 {
+    background-color: #007A8D;
+    color: white;
+    height: 10%;
+    
+}
+
+.footer2 {
+    background-color: #18ACC4;
+    height: 10%;
+}
+
+.titleFooter2 {
+    color: white;
+    text-align: center;
+    padding-top: 4%
+    // margin-top: 25%
+}
