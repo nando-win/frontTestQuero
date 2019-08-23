@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Adicionar Bolsa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <p>Filtre e adicione as bolsas de seu interesse.</p>
+
+  <ion-item>
+    <ion-label>SELECIONE SUA CIDADE</ion-label>
+    <ion-select [interfaceOptions]="customOptions" interface="action-sheet">
+      <ion-select-option *ngFor="let bolsa of bolsas" >{{bolsa.campus.city}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+</ion-content>

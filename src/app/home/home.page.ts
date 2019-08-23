@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { AddBolsaPage } from '../add-bolsa/add-bolsa.page';
+import { ModalController } from '@ionic/angular';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +10,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public modalController: ModalController) {}
 
+
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: AddBolsaPage
+    });
+    return await modal.present();
+  }
 }

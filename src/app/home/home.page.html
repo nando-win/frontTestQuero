@@ -1,53 +1,61 @@
 <ion-header class="header">
-  <ion-toolbar>
-    <ion-title>
-      <div class="div-header">Como funciona</div>
-      <div class="div-header">
-        <i class="fab fa-whatsapp"></i>
-        0800 123 2222
-        <br>
-        Envie mensagem ou ligue
-      </div>
-      <div class="div-header">Titulo</div>
-      <div class="div-header">Nome Sobrenome</div>
-    </ion-title>
-  </ion-toolbar>
+  <table class="tabHeader">
+    <thead>
+      <tr class="rowHead">
+        <th class="div-header-left1"><ion-icon name="information-circle-outline"></ion-icon>Como funciona</th>
+        <th class="div-header-left2">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          0800 123 2222
+          <br>
+          Envie mensagem ou ligue
+        </th>
+        <th class="div-header-titulo"><a>Titulo</a></th>
+        <th class="div-header-right">Nome Sobrenome<ion-icon name="contact"></ion-icon></th>
+      </tr>
+    </thead>
+  </table>
 </ion-header>
 
-<ion-content>
-  <!-- <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div> -->
-
-<!-- <table>
-  <thead>
-    <tr class="barraCentral">
-      <th><a href="">Minha conta</a></th>
-      <th>Pré-matriculas</th>
-      <th>Bolsas favoritas</th>
-    </tr>
-  </thead>
-</table> -->
+<ion-content class="content">
 
 <table class="tableMenu">
-  <thead>
+  <thead class="headMenu">
     <tr>
-      <a href="">Minha conta</a>
-      <a href="">Pré-matriculas</a>
-      <a href="">Bolsas favoritas</a>
+      <a class="aMenu" href="">Minha conta</a>
+      <a class="aMenu" href="">Pré-matriculas</a>
+      <a class="aMenu" href="">Bolsas favoritas</a>
     </tr>
+  </thead>
+</table>
+
+<table class="tabEnd">
+  <thead class="headEnd">
+    <th class="thEnd"><a class="aEnd" href="">Home</a>/</th>
+    <th class="thEnd"><a class="aEnd" href="">Minha conta</a>/</th>
+    <th class="thEnd">Bolsas favoritas</th>
   </thead>
 </table>
 
 <div>
   <h1 class="negrito">Bolsas favoritas</h1>
-  <p>Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</p>
+  <p class="divDesc">Adicione bolsas de cursos e faculdades do seu interesse e receba atualizações com as melhores ofertas disponíveis.</p>
 </div>
+
+<table class="tableSemestre">
+  <thead class="headSemestre">
+    <!-- <tr class="semestres"> -->
+      <a class="semestres" >Todos os semestres</a>
+      <a class="semestres" href="">2º semestre de 2019</a>
+      <a class="semestres" href="">1º semestre de 2019</a>
+    <!-- </tr> -->
+  </thead>
+</table>
 
 <ion-card>
   <ion-card-header>
-    <ion-icon class="iconCard" name="add-circle-outline"></ion-icon>    
+    <ion-button fill="clear" (click)="presentModal()">
+      <ion-icon slot="icon-only" class="iconCard" name="add-circle-outline"></ion-icon>
+    </ion-button>
   </ion-card-header>
   <ion-card-content>
       <ion-card-title>Adicionar bolsa</ion-card-title>
@@ -58,37 +66,40 @@
 </ion-content>
 
 <ion-footer class="footer1">
-    <!-- <ion-title>Footer 1</ion-title> -->
-  <div>
-    <div>
-      <div></div>
-      <div>
-        <div>0800 123 2222</div>
-        <div>Seg - Sex 8h-22h</div>
-      </div>
-    </div>
-    <div>
-      <div></div>
-      <div>
-        <div>Chat ao vivo</div>
-        <div>Seg - Sex 8h-22h</div>
-      </div>
-    </div>
-    <div>
-      <div></div>
-      <div>
-        Mande um e-mail
-      </div>
-      <div>Respondemos rapidinho</div>
-    </div>
-    <div>
-      <div></div>
-      <div>
-        Central de ajuda
-      </div>
-      <div>Encontre todas as respostas</div>
-    </div>
-  </div>
+  <table class="tabFooter1">
+    <thead>
+      <tr>
+        <th>
+          <div class="divFooter1">
+            0800 123 2222
+            <br>
+            Seg - Sex 8h-22h
+          </div>
+        </th>
+        <th>
+          <div class="divFooter1">
+            Chat ao vivo
+            <br>
+            Seg - Sex 8h-22h
+          </div>
+        </th>
+        <th>
+          <div class="divFooter1">
+            Mande um e-mail
+            <br>
+            Respondemos rapidinho
+          </div>
+        </th>
+        <th>
+          <div class="divFooter1">
+            Central de ajuda
+            <br>
+            Encontre todas as respostas
+          </div>
+        </th>
+      </tr>
+    </thead>
+  </table>
 </ion-footer>
 
 <ion-footer class="footer2">
